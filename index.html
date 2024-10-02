@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .pin-container {
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .pin {
+            width: 275px;
+            height: 300px;
+            border-radius: 15px;
+            border: 3px solid rgb(190, 20, 17);
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .pin:hover {
+            transform: scale(1.05);
+        }
+
+        .pin-text {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            border-radius: 0 0 15px 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pin-container">
+        <div class="pin" style="background-image: url('https://t4.ftcdn.net/jpg/00/86/41/89/360_F_86418998_mQ7NZfxcfR1hK1PDbVDSUkr6TFZbNRc0.jpg'); background-size: cover;">
+            <div class="pin-text">Soccer</div>
+        </div>
+        
+        <div class="pin" style="background-image: url('https://www.okayafrica.com/media-library/wizkid-performs-at-tottenham-hotspur-stadium-on-july-29-2023-in-london-england.jpg?id=34710424&width=1200&height=600&coordinates=0%2C0%2C0%2C250');  background-size: cover;">
+            <div class="pin-text">Music</div>
+        </div>
+        
+        <div class="pin" style="background-image: url('https://sewguide.com/wp-content/uploads/2023/07/streetwear-fashion.jpg');background-size: cover; ">
+            <div class="pin-text">Fashion</div>
+        </div>
+        
+        <div class="pin" style="background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000017211/a867653e238e182ddc0807682c77a11d8784a723f0a0c968f6873b4858e848f6'); background-size: cover;">
+            <div class="pin-text">Gaming</div>
+        </div>
+        
+        <div class="pin" style="background-image: url('https://dancefunk.co.za/sitepad-data/uploads/2024/01/afrobeat-mix.jpg'); background-size: cover;">
+            <div class="pin-text">Dancing</div>
+        </div>
+    </div>
+
+</body>
+</html>
